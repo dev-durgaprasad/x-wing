@@ -10,6 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
 </head>
 <body>
   <div class="loader" id="loader"><div class="loader-mark">X<span>/</span>W</div><div class="loader-line"><i></i></div><p>INITIALIZING FLIGHT SYSTEMS</p><span class="loader-percent">00</span></div>
@@ -23,7 +31,7 @@
   <main id="top">
     <section class="story hero" data-stage="hero">
       <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> NEXT-GENERATION STARFIGHTER <span class="eyebrow-index">01 — 09</span></div><h1>ENGINEERED<br>FOR THE <em>UNKNOWN.</em></h1><p>Every component has a purpose. Every system tells a story. Explore the anatomy of a spacecraft built for the edge of the galaxy.</p><div class="hero-actions"><a class="button-primary" href="#flight">EXPLORE THE CRAFT <span>↘</span></a><a class="text-link" href="#specs">VIEW SPECIFICATIONS <span>↗</span></a></div></div>
-      <div class="hero-index"><span>FIG. 01</span><span>XW — 01</span></div><div class="readout"><span>FRAME: XW-01</span><span>PROPULSION: QUAD ENGINE</span><span>STATUS: IN FLIGHT</span></div><a class="scroll-cue" href="#flight"><span class="scroll-wheel"></span> SCROLL TO EXPLORE</a><div class="hero-note">A STUDY IN<br>PRECISION &amp; FLIGHT</div>
+      <div class="hero-index"><span>FIG. 01</span><span>XW — 01</span></div><div class="readout"><span>FRAME: XW-01</span><span>PROPULSION: QUAD ENGINE</span><span>STATUS: IN FLIGHT</span></div><a class="scroll-cue" href="#flight"><span class="scroll-wheel"></span> SCROLL TO EXPLORE</a><div class="hero-note">A STUDY IN<br>PRECISION &amp; FLIGHT</div><div class="hero-3d-hint"><span class="hud-dot"></span> DRAG TO ROTATE 3D STARSHIP</div>
     </section>
     <section class="story flight" id="flight" data-stage="flight"><div class="section-copy"><div class="eyebrow"><span class="eyebrow-line"></span> 02 / FIRST CONTACT</div><h2>BEYOND THE<br>KNOWN <em>FRONTIER.</em></h2><p>Precision engineering meets the impossible. A closer look at the systems that carry this craft through the dark.</p><div class="side-label">DEEP SPACE TRANSIT <span>·</span> 04:21:08</div></div><div class="float-label label-nose">01 <b>FLIGHT DECK</b><span>COMMAND MODULE</span></div><div class="float-label label-wing">02 <b>S-FOIL ARRAY</b><span>VARIABLE GEOMETRY</span></div><div class="float-label label-engine">03 <b>ION DRIVE</b><span>QUAD PROPULSION</span></div></section>
     <section class="story exploded" id="craft" data-stage="explode"><div class="section-copy"><div class="eyebrow"><span class="eyebrow-line"></span> 03 / THE GREAT SEPARATION</div><h2>EVERY PART.<br><em>A PURPOSE.</em></h2><p>One machine, reduced to its essential systems. Follow the assembly as the architecture opens into view.</p><div class="phase-list"><span class="active">01 <i>OUTER SHELL</i></span><span>02 <i>WING SYSTEM</i></span><span>03 <i>PROPULSION</i></span><span>04 <i>REACTOR CORE</i></span></div></div><div class="assembly-hud"><div class="hud-top"><span><i class="hud-dot"></i> EXPLODED ASSEMBLY</span><span>DIAGNOSTIC MODE</span></div><div class="hud-stats"><span>COMPONENTS <b>SEPARATED</b></span><span>GRAVITY <b>0.00 G</b></span><span>SYSTEM <b>01 / 04</b></span></div><div class="hud-bottom"><span>AXIS / XW-01</span><span>POSITION LOCKED</span></div></div><div class="part-tag tag-reactor">CORE / 04<span>ENERGY CONTAINMENT</span></div><div class="part-tag tag-engine">DRIVE / 02<span>ION PROPULSION</span></div><div class="part-tag tag-wing">S-FOIL / 01<span>MODULAR AIRFRAME</span></div></section>

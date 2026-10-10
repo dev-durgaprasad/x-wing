@@ -21,7 +21,7 @@ Then open `http://127.0.0.1:8000` in a WebGL-capable browser. Press Ctrl+C in th
 
 ## Model and concept notes
 
-No external GLB asset is required. Major assemblies are procedural Three.js geometry, with reusable material and geometry helpers in `main.js`. This keeps the components local to the project and independently animatable. Small fasteners and dust are generated deterministically where possible; decorative micro-parts use light variation. The reactor readings, propulsion data, vehicle, and engineering details are fictional visual storytelling and are not authentic aerospace specifications.
+The experience features an authentic textured X-Wing starfighter model (`source/textured_x-wing_low_poly.glb`) loaded via Three.js `GLTFLoader` at the center of the hero stage, rendered with cinematic PBR lighting, subtle deep-space hovering physics, and interactive 3D drag-to-rotate inspection. As you scroll into the engineering sections, procedural Three.js component assemblies open into the exploded diagnostic view (canopy, flight deck, reactor core, ion turbines, and modular airframe), reassembling seamlessly for the final hyperdrive departure sequence.
 
 ## Interaction
 
